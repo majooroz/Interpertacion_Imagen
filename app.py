@@ -12,6 +12,8 @@ st.set_page_config(page_title="Analisis dde imagen", layout="centered", initial_
 # Streamlit page setup
 st.title("Análisis de Imagen:🤖🏞️")
 #st.write(openai.Model.list())
+image = Image.open("interpretación.jpg")
+st.image(image,caption = "interpretación")
 ke = st.text_input('Ingresa tu Clave')
 #os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
 os.environ['OPENAI_API_KEY'] = ke
